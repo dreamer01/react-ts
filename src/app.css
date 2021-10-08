@@ -5,7 +5,27 @@ body{
 }
 
 .app{
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   background-color: beige;
   min-height: 100%;
+}
+
+.btn {
+  background: #a458f0;
+  color: white;;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #663399
+}
+
+.btn:active {
+  outline: 2px dashed #a458f0;
 }
