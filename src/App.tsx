@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from './components/Button';
-import Styles from './app.module.css';
+import Styles from './app.css';
 
 type AppProps = {
   message: string;

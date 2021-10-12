@@ -11,9 +11,9 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
+        test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
+        use: ['babel-loader', 'ts-loader'],
       },
       {
         test: /\.css$/i,
@@ -31,7 +31,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
+    extensions: ['.js', '.jsx', '.tsx', '.ts'],
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
