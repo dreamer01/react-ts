@@ -16,3 +16,6 @@ output.txt
 
 # build files
 dist
+
+# ide
+.vscode
